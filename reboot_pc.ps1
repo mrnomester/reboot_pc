@@ -1,6 +1,4 @@
-﻿#Requires -RunAsAdministrator
-
-# Проверка прав администратора
+﻿# Проверка прав администратора
 function Test-IsAdmin {
     $identity = [System.Security.Principal.WindowsIdentity]::GetCurrent()
     $principal = New-Object System.Security.Principal.WindowsPrincipal($identity)
